@@ -96,4 +96,13 @@ public:
 
         Node *current = START;
 
+        // Step 1: Traverse the list ro find the node
+        while (current != NULL && current->noMhs != rollNo)
+            current = current->next;
+
+        if (current == NULL)
+        {
+            cout << "Record not found" << endl;
+            return;
+        }
 
