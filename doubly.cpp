@@ -229,4 +229,30 @@ int main()
 
         cin >> choice;
 
-
+        switch (choice)
+        {
+            case '1':
+            list.addNode();
+            break;
+            case '2':
+            list.hapus();
+            case '3':
+            list.traverse();
+            case '4':
+            list.revtraverse();
+            break;
+            case '5':
+            list.searchData();
+            break;
+            case '6':
+            return 0;
+            default:
+            cout << "Invalid Option\n";
+        }
+        cout << "\nPress Enter to continue..." ;
+        cin.ignore();
+        cin.get();
+        cout << endl;
+        system("clear");
+    }while (choice != '6');
+};
